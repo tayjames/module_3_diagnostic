@@ -10,7 +10,9 @@ RSpec.describe "As a user" do
       click_on 'Locate'
 
       expect(current_path).to eq(search_path)
-      expect(page).to have_css('.stations', count: 10)
+      # save_and_open_page
+      # expect(page).to have_css('.stations', count: 10)
+      expect(page).to have_content(10)
       within(first(".station")) do
         expect(page).to have_css(".name")
         expect(page).to have_css(".address")
