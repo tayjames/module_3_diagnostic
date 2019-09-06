@@ -1,0 +1,7 @@
+<%= form_for(@house) do |f| %>
+
+    <%= f.text_field :name %><br>
+    <%= f.select :house, [ 'Greyjoy', 'greyjoy' ], :prompt => 'Select One' %>
+
+    <%= f.submit %>
+<% end %>
