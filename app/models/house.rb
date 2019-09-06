@@ -1,9 +1,9 @@
 class House
   attr_reader :name,
               :id
-              
+
   def initialize(attributes = {})
-    @name = attributes[name]
-    @id = attributes[id]
+    @name = attributes[:name]
+    @id = attributes[:id]
   end
 end

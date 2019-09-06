@@ -5,8 +5,7 @@ RSpec.describe "As a user" do
     it "I select Greyjoy from the dropdown and click on Get Members" do
       visit '/'
 
-      save_and_open_page
-      click_on 'Greyjoy'
+      page.select 'Greyjoy', from: :house
       click_on 'Get Members'
       expect(current_path).to eq("/search")
 

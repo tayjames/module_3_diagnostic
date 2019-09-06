@@ -1,7 +1,7 @@
 class SearchController < ApplicationController
     def index
       render locals: {
-        facade: StationSearchResults.new(params[:zip])
+        facade: HouseMemberSearchResults.new(params[:house])
       }
     end
 end
